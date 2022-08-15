@@ -10,4 +10,4 @@
 ##### Tickets can be filtered
 [Link to the page⬅️][link]
 
-[link]: https://steterik.github.io/stet-tickets/
+[link]: https://steterik.github.io/stet-tickets
