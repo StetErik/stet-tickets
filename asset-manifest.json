@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/stet-tickets/static/css/main.af203774.css",
+    "main.js": "/stet-tickets/static/js/main.121d4a4d.js",
+    "static/media/logo.png": "/stet-tickets/static/media/logo.d004fec6911fae84cb7b.png",
+    "index.html": "/stet-tickets/index.html",
+    "main.af203774.css.map": "/stet-tickets/static/css/main.af203774.css.map",
+    "main.121d4a4d.js.map": "/stet-tickets/static/js/main.121d4a4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af203774.css",
+    "static/js/main.121d4a4d.js"
+  ]
+}
