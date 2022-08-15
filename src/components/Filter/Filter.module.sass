@@ -1,0 +1,63 @@
+.item
+  background-color: #fff
+  border-radius: 7px
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2)
+  padding-bottom: 8px
+  flex: 0 0 250px
+.title
+  text-transform: uppercase
+  color: #888
+  font-weight: 600
+  font-size: 12px
+  margin: 15px
+.filterItem
+  padding: 7px 15px
+  display: flex
+  align-items: center
+  input
+    appearance: none
+    position: relative
+    &::after
+      content: ''
+      padding: 1px 9px
+      border: 1px solid #999
+      border-radius: 3px
+      cursor: pointer
+    &:checked
+      &::before
+        content: '✓'
+        color: #0a97c5
+        position: absolute
+        left: 4px
+        top: -3px
+        font-size: 17px
+        cursor: pointer
+      &::after
+        border: 1px solid #0a97c5
+  &:hover
+    background-color: #0a96c539
+    .only
+      visibility: visible
+      opacity: 1
+.label
+  flex: 1 1 auto
+.text
+  color: #777
+  padding-left: 8px
+  cursor: pointer
+.only
+  cursor: pointer
+  text-align: right
+  align-items: flex-end
+  justify-content: flex-end
+  justify-self: flex-end
+  text-transform: uppercase
+  align-self: flex-end
+  color: #0a97c5
+  font-size: 12px
+  font-weight: 600
+  padding: 3px 5px
+  background: none
+  border: none
+  opacity: 0
+  visibility: hidden

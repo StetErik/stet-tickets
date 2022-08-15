@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from 'react'
+import { iFilterContext, tFilter } from './types/filter'
+
+import Filter from './components/Filter'
+import Tickets from './components/Tickets'
+
+import './App.sass'
+
+export const FilterContext = createContext<iFilterContext| null>(null)
 
 function App() {
+  const [filter, setFilter] = useState<tFilter>({
+    'all': true, '0': false, '1': false, '2': false, '3': false
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FilterContext.Provider value={{filter, setFilter}}>
+        <Filter/>
+        <Tickets/>
+      </FilterContext.Provider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
